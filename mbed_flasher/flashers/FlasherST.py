@@ -72,7 +72,7 @@ class FlasherSTLink(FlasherBase):
         :return: boolean
         """
         try:
-            return target.get("device_type") == FlasherSTLink.name
+            return target["device_type"] == FlasherSTLink.name
         except KeyError:
             return False
 
